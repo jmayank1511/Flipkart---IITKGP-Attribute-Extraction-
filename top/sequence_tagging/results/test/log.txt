@@ -1,0 +1,203 @@
+2018-03-24 08:37:48,854:INFO: Initializing tf session
+2018-03-24 08:37:52,432:INFO: Epoch 1 out of 15
+2018-03-24 09:51:32,987:INFO: acc 94.94 - f1 71.84
+2018-03-24 09:51:35,473:INFO: - new best score!
+2018-03-24 09:51:35,474:INFO: Epoch 2 out of 15
+2018-03-24 11:06:29,427:INFO: acc 95.63 - f1 76.45
+2018-03-24 11:06:31,508:INFO: - new best score!
+2018-03-24 11:06:31,508:INFO: Epoch 3 out of 15
+2018-03-24 12:21:26,426:INFO: acc 96.02 - f1 79.15
+2018-03-24 12:21:28,469:INFO: - new best score!
+2018-03-24 12:21:28,470:INFO: Epoch 4 out of 15
+2018-03-24 13:36:03,580:INFO: acc 96.23 - f1 80.07
+2018-03-24 13:36:05,236:INFO: - new best score!
+2018-03-24 13:36:05,236:INFO: Epoch 5 out of 15
+2018-03-24 14:49:52,661:INFO: acc 96.50 - f1 81.91
+2018-03-24 14:49:55,308:INFO: - new best score!
+2018-03-24 14:49:55,311:INFO: Epoch 6 out of 15
+2018-03-24 16:04:13,727:INFO: acc 96.64 - f1 82.48
+2018-03-24 16:04:15,554:INFO: - new best score!
+2018-03-24 16:04:15,558:INFO: Epoch 7 out of 15
+2018-03-24 17:18:27,342:INFO: acc 96.79 - f1 83.32
+2018-03-24 17:18:29,358:INFO: - new best score!
+2018-03-24 17:18:29,362:INFO: Epoch 8 out of 15
+2018-03-24 18:33:01,590:INFO: acc 96.89 - f1 83.86
+2018-03-24 18:33:04,208:INFO: - new best score!
+2018-03-24 18:33:04,208:INFO: Epoch 9 out of 15
+2018-03-24 19:46:39,122:INFO: acc 96.92 - f1 84.27
+2018-03-24 19:46:40,752:INFO: - new best score!
+2018-03-24 19:46:40,752:INFO: Epoch 10 out of 15
+2018-03-24 21:01:12,346:INFO: acc 97.02 - f1 84.71
+2018-03-24 21:01:13,931:INFO: - new best score!
+2018-03-24 21:01:13,932:INFO: Epoch 11 out of 15
+2018-03-24 22:15:24,446:INFO: acc 97.11 - f1 85.17
+2018-03-24 22:15:26,545:INFO: - new best score!
+2018-03-24 22:15:26,546:INFO: Epoch 12 out of 15
+2018-03-24 23:29:32,049:INFO: acc 97.17 - f1 85.40
+2018-03-24 23:29:34,225:INFO: - new best score!
+2018-03-24 23:29:34,225:INFO: Epoch 13 out of 15
+2018-03-25 00:39:44,294:INFO: acc 97.20 - f1 85.64
+2018-03-25 00:39:45,522:INFO: - new best score!
+2018-03-25 00:39:45,522:INFO: Epoch 14 out of 15
+2018-03-25 01:47:16,974:INFO: acc 97.26 - f1 85.86
+2018-03-25 01:47:19,253:INFO: - new best score!
+2018-03-25 01:47:19,256:INFO: Epoch 15 out of 15
+2018-03-25 02:54:34,202:INFO: acc 97.28 - f1 86.08
+2018-03-25 02:54:36,202:INFO: - new best score!
+2018-03-29 21:52:20,221:INFO: Initializing tf session
+2018-03-29 21:52:20,566:INFO: Reloading the latest trained model...
+2018-03-29 21:52:20,566:INFO: Restoring parameters from results/test/model.weights/
+2018-03-29 21:52:20,929:INFO: Testing model over test set
+2018-03-29 21:53:22,439:INFO: acc 97.28 - f1 86.08
+2018-03-29 21:53:22,439:INFO: Testing model over test set
+2018-03-29 21:54:23,419:INFO: acc 97.28 - f1 86.08
+2018-03-30 00:33:47,972:INFO: Initializing tf session
+2018-03-30 00:33:48,268:INFO: Reloading the latest trained model...
+2018-03-30 00:33:48,268:INFO: Restoring parameters from results/test/model.weights/
+2018-03-30 00:33:48,385:INFO: Testing model over test set
+2018-03-30 00:34:47,628:INFO: acc 97.28 - f1 86.08
+2018-03-30 00:59:18,736:INFO: Initializing tf session
+2018-03-30 00:59:19,046:INFO: Reloading the latest trained model...
+2018-03-30 00:59:19,046:INFO: Restoring parameters from results/test/model.weights/
+2018-03-30 00:59:19,167:INFO: Testing model over test set
+2018-03-30 01:00:20,760:INFO: acc 97.28 - f1 86.08
+2018-03-30 01:00:20,761:INFO: 
+This is an interactive mode.
+To exit, enter 'exit'.
+You can enter a sentence like
+input> I love Paris
+2018-03-30 01:03:02,451:INFO: Looking your best is no longer an ordeal! RARE    has a wardrobe solution for every casual     occasion. Size is not an issue any more. It’s all about preference, your preference! This casual     sexy creation goes with just about any pair of jeans. As for heels or flats, again it’s up to you. No need to worry about muffin tops   and awkward bulges, the light material flows lightly over your mid section and around the arms creating the perfect fit. Georgette round  neck   3/4      Sleeve   Solid     Dress.So you have the confidence to conquer and the style to inspire. 
+2018-03-30 01:03:02,451:INFO: O       O    O    O  O  O      O  O       B_BRAND O   O O        O        O   O     B_OCCASION O         O    O  O   O  O     O   O     O    O   O     O           O    O           O    B_OCCASION O    O        O    O    O    O     O   O    O  O      O  O   O     O  O      O     O    O  O  O    O  O    O  O     O     O      B_TYPE O   O       O       O   O     O        O     O       O    O    O   O       O   O      O   O    O        O   O       O    B_FABRIC  B_NECK I_NECK B_SLEEVE I_SLEEVE B_PATTERN O        O   O    O   O          O  O       O   O   O     O  O        
+2018-03-30 01:03:51,861:INFO: Looking your best is no longer an ordeal! RARE    has a wardrobe solution for every casual     occasion. 
+2018-03-30 01:03:51,861:INFO: O       O    O    O  O  O      O  O       B_BRAND O   O O        O        O   O     B_OCCASION O         
+2018-04-12 13:40:04,096:INFO: Initializing tf session
+2018-04-12 13:40:04,994:INFO: Epoch 1 out of 30
+2018-04-12 15:01:12,599:INFO: acc 94.88 - f1 71.71
+2018-04-12 15:01:14,898:INFO: - new best score!
+2018-04-12 15:01:14,898:INFO: Epoch 2 out of 30
+2018-04-12 16:21:50,003:INFO: acc 95.53 - f1 76.18
+2018-04-12 16:21:52,999:INFO: - new best score!
+2018-04-12 16:21:53,000:INFO: Epoch 3 out of 30
+2018-04-12 17:42:49,448:INFO: acc 95.91 - f1 78.36
+2018-04-12 17:42:51,545:INFO: - new best score!
+2018-04-12 17:42:51,546:INFO: Epoch 4 out of 30
+2018-04-12 19:03:21,075:INFO: acc 96.19 - f1 80.02
+2018-04-12 19:03:24,023:INFO: - new best score!
+2018-04-12 19:03:24,023:INFO: Epoch 5 out of 30
+2018-04-12 20:23:22,864:INFO: acc 96.41 - f1 81.16
+2018-04-12 20:23:25,119:INFO: - new best score!
+2018-04-12 20:23:25,120:INFO: Epoch 6 out of 30
+2018-04-12 21:43:32,634:INFO: acc 96.55 - f1 81.91
+2018-04-12 21:43:34,885:INFO: - new best score!
+2018-04-12 21:43:34,886:INFO: Epoch 7 out of 30
+2018-04-12 23:03:45,867:INFO: acc 96.68 - f1 82.78
+2018-04-12 23:03:47,796:INFO: - new best score!
+2018-04-12 23:03:47,810:INFO: Epoch 8 out of 30
+2018-04-13 00:24:23,682:INFO: acc 96.81 - f1 83.33
+2018-04-13 00:24:25,624:INFO: - new best score!
+2018-04-13 00:24:25,624:INFO: Epoch 9 out of 30
+2018-04-13 01:41:29,225:INFO: acc 96.93 - f1 84.07
+2018-04-13 01:41:31,481:INFO: - new best score!
+2018-04-13 01:41:31,482:INFO: Epoch 10 out of 30
+2018-04-13 02:55:10,770:INFO: acc 96.99 - f1 84.31
+2018-04-13 02:55:13,272:INFO: - new best score!
+2018-04-13 02:55:13,273:INFO: Epoch 11 out of 30
+2018-04-13 04:08:40,757:INFO: acc 97.03 - f1 84.69
+2018-04-13 04:08:43,549:INFO: - new best score!
+2018-04-13 04:08:43,549:INFO: Epoch 12 out of 30
+2018-04-13 05:21:11,301:INFO: acc 97.10 - f1 84.91
+2018-04-13 05:21:13,110:INFO: - new best score!
+2018-04-13 05:21:13,111:INFO: Epoch 13 out of 30
+2018-04-13 06:34:52,742:INFO: acc 97.15 - f1 85.18
+2018-04-13 06:34:55,558:INFO: - new best score!
+2018-04-13 06:34:55,559:INFO: Epoch 14 out of 30
+2018-04-13 07:48:19,749:INFO: acc 97.19 - f1 85.43
+2018-04-13 07:48:21,903:INFO: - new best score!
+2018-04-13 07:48:21,903:INFO: Epoch 15 out of 30
+2018-04-13 09:01:57,957:INFO: acc 97.23 - f1 85.67
+2018-04-13 09:01:59,679:INFO: - new best score!
+2018-04-13 09:01:59,679:INFO: Epoch 16 out of 30
+2018-04-13 10:15:53,943:INFO: acc 97.25 - f1 85.77
+2018-04-13 10:15:55,883:INFO: - new best score!
+2018-04-13 10:15:55,889:INFO: Epoch 17 out of 30
+2018-04-13 11:31:11,865:INFO: acc 97.26 - f1 85.80
+2018-04-13 11:31:13,703:INFO: - new best score!
+2018-04-13 11:31:13,706:INFO: Epoch 18 out of 30
+2018-04-13 12:43:37,214:INFO: acc 97.32 - f1 86.17
+2018-04-13 12:43:39,695:INFO: - new best score!
+2018-04-13 12:43:39,695:INFO: Epoch 19 out of 30
+2018-04-13 13:57:19,765:INFO: acc 97.33 - f1 86.20
+2018-04-13 13:57:22,547:INFO: - new best score!
+2018-04-13 13:57:22,548:INFO: Epoch 20 out of 30
+2018-04-13 15:10:21,803:INFO: acc 97.37 - f1 86.36
+2018-04-13 15:10:24,421:INFO: - new best score!
+2018-04-13 15:10:24,424:INFO: Epoch 21 out of 30
+2018-04-13 16:23:50,914:INFO: acc 97.36 - f1 86.26
+2018-04-13 16:23:50,914:INFO: Epoch 22 out of 30
+2018-04-13 17:37:19,800:INFO: acc 97.39 - f1 86.43
+2018-04-13 17:37:22,171:INFO: - new best score!
+2018-04-13 17:37:22,172:INFO: Epoch 23 out of 30
+2018-04-13 18:50:33,482:INFO: acc 97.41 - f1 86.60
+2018-04-13 18:50:35,281:INFO: - new best score!
+2018-04-13 18:50:35,281:INFO: Epoch 24 out of 30
+2018-04-13 20:03:15,355:INFO: acc 97.39 - f1 86.49
+2018-04-13 20:03:15,355:INFO: Epoch 25 out of 30
+2018-04-13 21:13:38,200:INFO: acc 97.42 - f1 86.60
+2018-04-13 21:13:40,129:INFO: - new best score!
+2018-04-13 21:13:40,129:INFO: Epoch 26 out of 30
+2018-04-13 22:19:41,687:INFO: acc 97.43 - f1 86.68
+2018-04-13 22:19:44,272:INFO: - new best score!
+2018-04-13 22:19:44,272:INFO: Epoch 27 out of 30
+2018-04-13 23:25:56,358:INFO: acc 97.44 - f1 86.71
+2018-04-13 23:25:57,510:INFO: - new best score!
+2018-04-13 23:25:57,510:INFO: Epoch 28 out of 30
+2018-04-14 00:32:01,538:INFO: acc 97.44 - f1 86.72
+2018-04-14 00:32:02,953:INFO: - new best score!
+2018-04-14 00:32:02,954:INFO: Epoch 29 out of 30
+2018-04-14 01:38:15,555:INFO: acc 97.45 - f1 86.72
+2018-04-14 01:38:17,795:INFO: - new best score!
+2018-04-14 01:38:17,797:INFO: Epoch 30 out of 30
+2018-04-14 02:43:49,222:INFO: acc 97.45 - f1 86.75
+2018-04-14 02:43:50,674:INFO: - new best score!
+2018-04-14 11:12:23,706:INFO: Initializing tf session
+2018-04-14 11:12:24,748:INFO: Reloading the latest trained model...
+2018-04-14 11:12:24,749:INFO: Restoring parameters from results/test/model.weights/
+2018-04-14 11:12:25,359:INFO: Testing model over test set
+2018-04-14 11:16:33,271:INFO: acc 97.45 - f1 86.75
+2018-04-14 11:16:33,272:INFO: 
+This is an interactive mode.
+To exit, enter 'exit'.
+You can enter a sentence like
+input> I love Paris
+2018-09-07 01:47:29,100:WARNING: From /home/user/.local/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-07 01:47:29,112:WARNING: From /home/user/.local/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-07 01:47:30,981:INFO: Initializing tf session
+2018-09-07 01:47:31,412:INFO: Reloading the latest trained model...
+2018-09-07 01:47:31,412:INFO: Restoring parameters from results/test/model.weights/
+2018-09-07 01:47:31,697:INFO: Testing model over test set
+2018-09-07 01:50:30,396:INFO: acc 97.45 - f1 86.75
+2018-09-07 01:50:30,396:INFO: 
+This is an interactive mode.
+To exit, enter 'exit'.
+You can enter a sentence like
+input> I love Paris
+2018-10-01 00:39:38,182:WARNING: From /home/user/.local/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-01 00:39:38,187:WARNING: From /home/user/.local/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-01 00:39:40,037:INFO: Initializing tf session
+2018-10-01 00:39:40,452:INFO: Reloading the latest trained model...
+2018-10-01 00:39:40,452:INFO: Restoring parameters from results/test/model.weights/
+2018-10-01 00:39:40,746:INFO: Testing model over test set
+2018-10-01 00:42:20,151:INFO: acc 97.45 - f1 86.75
+2018-10-01 00:42:20,151:INFO: 
+This is an interactive mode.
+To exit, enter 'exit'.
+You can enter a sentence like
+input> I love Paris
