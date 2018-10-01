@@ -1,6 +1,6 @@
 # NLP Attribute Extraction 
 
-This repo implements a NER model using Tensorflow ( Satcked Bi-directional LSTM + CRF + chars embeddings).
+This repo implements a NER model using Tensorflow (  Bi-directional LSTM + CRF + chars embeddings).
 
 
 ## Task
@@ -94,15 +94,6 @@ T-shirt O
 . O
 ```
 
-
-Once you have produced your data files, change the parameters in `config.py` like
-
-```
-# dataset
-dev_filename = "data/coNLL/eng/eng.testa.iob"
-test_filename = "data/coNLL/eng/eng.testb.iob"
-train_filename = "data/coNLL/eng/eng.train.iob"
-```
 
 # Make the following folders:
 Sequence tagging [build_data.py, evaluate.py , train.py, model,data]
