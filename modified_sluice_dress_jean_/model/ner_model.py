@@ -326,7 +326,7 @@ class NERModel(BaseModel):
         return metrics["f1"]
 
 
-    def run_evaluate(self, test, k):
+    def run_evaluate(self, test):
         """Evaluates performance on test set
 
         Args:
@@ -365,11 +365,9 @@ class NERModel(BaseModel):
         r   = correct_preds / total_correct if correct_preds > 0 else 0
         f1  = 2 * p * r / (p + r) if correct_preds > 0 else 0
         acc = np.mean(accs)
-        st = "test_out"+"_"+ str(k)
-
-        f = open('%s.csv' % st, 'w')
-        f.write(out)
-        f.close()
+        with open("./test_out.txt", 'w') as f:
+            f.write(out)
+        print ("Precision:" + " " + str(p) + " " + "Recall:" + " " + str(r))
         return {"acc": 100*acc, "f1": 100*f1}
 
 
