@@ -305,6 +305,7 @@ class NERModel(BaseModel):
 
 
         #fp = "data/glove.6B/glove.6B.{}d.txt".format(dim_word)
+        file = "data/glove.6B/glove.6B.300d"
 
         for i in range (0,len(tag_list)):
             if i in val:
