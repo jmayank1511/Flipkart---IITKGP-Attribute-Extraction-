@@ -130,7 +130,7 @@ class BaseModel(object):
             
 
 
-    def evaluate(self, test , k):
+    def evaluate(self, test):
         """Evaluate model on test set
 
         Args:
@@ -138,7 +138,7 @@ class BaseModel(object):
 
         """
         self.logger.info("Testing model over test set")
-        metrics = self.run_evaluate(test,k)
+        metrics = self.run_evaluate(test)
         msg = " - ".join(["{} {:04.2f}".format(k, v)
                 for k, v in metrics.items()])
         self.logger.info(msg)
