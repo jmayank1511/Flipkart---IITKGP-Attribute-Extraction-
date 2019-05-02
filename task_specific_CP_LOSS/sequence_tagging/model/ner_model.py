@@ -244,18 +244,18 @@ class NERModel(BaseModel):
 
 
     def attention(dress, jean):
-        As_left = tf.placeholder(tf.float32, shape=[None, 900], name="left")
-        Bs_left = tf.placeholder(tf.float32, shape=[None, 900], name="left")
-        w_omega_left = tf.Variable(tf.random_normal([1, 900], stddev=0.1),name="left")
+        As_left = tf.placeholder(tf.float32, shape=[None, 300], name="left")
+        Bs_left = tf.placeholder(tf.float32, shape=[None, 300], name="left")
+        w_omega_left = tf.Variable(tf.random_normal([1, 300], stddev=0.1),name="left")
         with tf.name_scope('left'):
             v_left = tf.matmul(As_left, Bs_left) 
             temp_left = tf.multiply(v_left, w_omega_left)
             output_left = tf.nn.softmax(temp_left, name='alphas_left')
 
 
-        As_right = tf.placeholder(tf.float32, shape=[None, 900], name="right")
-        Bs_right = tf.placeholder(tf.float32, shape=[None, 900], name="right")
-        w_omega_right = tf.Variable(tf.random_normal([1, 900], stddev=0.1),name="right")
+        As_right = tf.placeholder(tf.float32, shape=[None, 300], name="right")
+        Bs_right = tf.placeholder(tf.float32, shape=[None, 300], name="right")
+        w_omega_right = tf.Variable(tf.random_normal([1, 300], stddev=0.1),name="right")
         with tf.name_scope('right'):
             v_right = tf.matmul(As_right, Bs_right) 
             temp_right = tf.multiply(v_right, w_omega_right)
