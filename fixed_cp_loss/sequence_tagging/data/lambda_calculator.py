@@ -51,7 +51,8 @@ def get_tag_words(fname):
             if line.strip() and len(line.strip().split(" ")) == 2:
                 word, tag = line.strip().split(" ")
                 if tag != "O":
-                    tag_words[(word, tag)] = tag_words.get((word, tag), 0) + 1
+                    key = (word, tag)
+                    tag_words[key] = tag_words.get(key, 0) + 1
     
     return tag_words
 
@@ -91,13 +92,14 @@ def calculate_similarity(v1, v1_tag_words, v2, v2_tag_words, vector_dict):
             v2_word_vec = vector_dict[v2_word]
             norm_score = norm_v1_word_vec * np.linalg.norm(v2_word_vec)
             cosine_similarity = 0 if norm_score == 0 else np.dot(v1_word_vec, v2_word_vec)/norm_score
-        
-            v1_key = "{} {}_{} {} {}_{}\t{}\n".format(v1_word, v1_tag, v1, v2_word, v2_tag, v2, cosine_similarity)
-            # if a pair (a1, b1) appears 5 times in dataset 1
-            # and if a pair (a2, b2) appear 10 times in dataset 2
-            # then they appear together 5 * 10 times.
-            v1_sim_results[v1_key] = v1_count * v2_count
-    
+
+            if cosine_similarity > 0.5:
+                v1_key = "{} {}_{} {} {}_{}\t{}\n".format(v1_word, v1_tag, v1, v2_word, v2_tag, v2, cosine_similarity)
+                # if a pair (a1, b1) appears 5 times in dataset 1
+                # and if a pair (a2, b2) appear 10 times in dataset 2
+                # then they appear together 5 * 10 times.
+                v1_sim_results[v1_key] = v1_count * v2_count
+
     return v1_sim_results
 
 def calculate_lambda(similarity_dict, outfile):
@@ -142,9 +144,10 @@ def calculate_lambda(similarity_dict, outfile):
 
 if __name__ == "__main__":
     vecs = loadGloveModel("glove.6B.300d.txt")
-    v1 = "dress"
-    v2 = "jean"
-    v1_list = get_tag_words("dress_3_45_train.txt")
-    v2_list = get_tag_words("jean_3_45_train.txt")
+    v1 = "mangal"
+    v2 = "necklace"
+    v1_list = get_tag_words("mangal.txt")
+    v2_list = get_tag_words("necklace.txt")
     sim_results = calculate_similarity(v1, v1_list, v2, v2_list, vecs)
-    calculate_lambda(sim_results, "dress_jean_lambda_vamshi_2.txt")
+    calculate_lambda(sim_results, "mangal_necklace_lambda.txt")
+ 
