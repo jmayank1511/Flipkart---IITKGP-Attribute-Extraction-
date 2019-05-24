@@ -40,15 +40,16 @@ class NERModel(BaseModel):
         # shape = (batch size, max length of sentence in batch)
         self.labels = tf.placeholder(tf.int32, shape=[None, None],
                         name="labels")
+        self.mask = tf.placeholder(tf.bool, shape=[None], name="mask")
 
         # hyper parameters
         self.dropout = tf.placeholder(dtype=tf.float32, shape=[],
                         name="dropout")
         self.lr = tf.placeholder(dtype=tf.float32, shape=[],
-                        name="lr")
+                        name="lr") 
 
 
-    def get_feed_dict(self, words, labels=None, lr=None, dropout=None):
+    def get_feed_dict(self, words, labels=None, lr=None, dropout=None, ids=None):
         """Given some data, pad it and build a feed dictionary
 
         Args:
@@ -76,6 +77,17 @@ class NERModel(BaseModel):
             self.word_ids: word_ids,
             self.sequence_lengths: sequence_lengths
         }
+
+        if ids:
+            # generate mask for task 1. 
+            mask = []
+            for _id in ids:
+                if _id == 1:
+                    mask.append(True)
+                else:
+                    mask.append(False)
+            feed[self.mask] = mask
+
 
         if self.config.use_chars:
             feed[self.char_ids] = char_ids
@@ -212,16 +224,12 @@ class NERModel(BaseModel):
         """Defines the loss"""
         if self.config.use_crf:
             log_likelihood, trans_params = tf.contrib.crf.crf_log_likelihood(self.logits, self.labels, self.sequence_lengths)
-            #init_op = tf.initialize_all_variables()
-            #with tf.Session() as sess:
-                #sess.run(init_op) 
-                #print (sess.run(self.labels))
-            #print (self.labels)
-
-            #self.cp_loss = coupling_loss(self.logits, self.labels, self.sequence_lengths)
-            
+            task1 = tf.boolean_mask(log_likelihood, self.mask)
+            task2 = tf.boolean_mask(log_likelihood, tf.logical_not(self.mask))
+            task1_ll_average = tf.reduce_mean(-task1)
+            task2_ll_average = tf.reduce_mean(-task2)
+            self.loss = tf.add(task1_ll_average, task2_ll_average)
             self.trans_params = trans_params 
-            self.loss = tf.reduce_mean(-log_likelihood)
 
         tf.summary.scalar("loss", self.loss)
 
@@ -285,7 +293,7 @@ class NERModel(BaseModel):
         self.add_word_embeddings_op()
         self.add_logits_op()
         self.add_loss_op()
-        self.add_coupling_loss()
+        # self.add_coupling_loss()
 
         # Generic functions that add training op and initialize session
         self.add_train_op(self.config.lr_method, self.lr, self.loss,
@@ -346,9 +354,9 @@ class NERModel(BaseModel):
         prog = Progbar(target=nbatches)
 
         # iterate over dataset
-        for i, (words, labels,_dummy) in enumerate(minibatches(train, batch_size)):
+        for i, (words, labels, ids) in enumerate(minibatches(train, batch_size)):
             fd, _ = self.get_feed_dict(words, labels, self.config.lr,
-                    self.config.dropout)
+                    self.config.dropout, ids=ids)
             #print(labels)
 
             #print (fd)

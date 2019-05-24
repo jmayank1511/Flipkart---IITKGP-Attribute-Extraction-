@@ -41,7 +41,7 @@ class FKDataset(object):
 
     """
     def __init__(self, filename, processing_word=None, processing_tag=None,
-                 max_iter=None):
+                 max_iter=None, task_id = None):
         """
         Args:
             filename: path to the file
@@ -55,12 +55,13 @@ class FKDataset(object):
         self.processing_tag = processing_tag
         self.max_iter = max_iter
         self.length = None
+        self._id = task_id
 
 
     def __iter__(self):
         niter = 0
         with open(self.filename) as f:
-            words, tags = [], []
+            words, tags, ids = [], []
             for line in f:
                 line = line.strip()
                 if (len(line) == 0 or line.startswith("-DOCSTART-")):
@@ -68,8 +69,8 @@ class FKDataset(object):
                         niter += 1
                         if self.max_iter is not None and niter > self.max_iter:
                             break
-                        yield words, tags
-                        words, tags = [], []
+                        yield words, tags, ids
+                        words, tags, ids = [], []
                 else:
                     ls = line.split(' ')
                     word, tag = ls[0],ls[-1]
@@ -79,6 +80,7 @@ class FKDataset(object):
                         tag = self.processing_tag(tag)
                     words += [word]
                     tags += [tag]
+                    ids += [self._id]
             #print(str(words))
             #print(str(tags))
 
@@ -350,12 +352,12 @@ def minibatches(data, minibatch_size):
         list of tuples
 
     """
-    x_batch, y_batch, word= [], [], []
-    for (x, y) in data:
+    x_batch, y_batch, ids= [], [], []
+    for (x, y, _id) in data:
         #print(str(x[0]))
         if len(x_batch) == minibatch_size:
-            yield x_batch, y_batch, word
-            x_batch, y_batch, word = [], [], []
+            yield x_batch, y_batch, ids
+            x_batch, y_batch, ids = [], [], []
 
         if type(x[0]) == tuple:
             word += [x]
@@ -363,9 +365,10 @@ def minibatches(data, minibatch_size):
             #print("Inside if")
         x_batch += [x]
         y_batch += [y]
+        ids += [_id]
 
     if len(x_batch) != 0:
-        yield x_batch, y_batch, word
+        yield x_batch, y_batch, ids
 
 
 def get_chunk_type(tok, idx_to_tag):
