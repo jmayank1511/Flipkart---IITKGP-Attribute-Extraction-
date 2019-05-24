@@ -1,0 +1,158 @@
+2019-05-24 10:58:48,448:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-05-24 10:58:48,449:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-05-24 10:58:51,273:INFO: Initializing tf session
+2019-05-24 10:58:52,449:INFO: Epoch 1 out of 30
+2019-05-24 10:59:39,220:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-05-24 10:59:39,221:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-05-24 10:59:41,934:INFO: Initializing tf session
+2019-05-24 10:59:43,100:INFO: Epoch 1 out of 30
+2019-05-24 11:02:04,529:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-05-24 11:02:04,530:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-05-24 11:02:07,324:INFO: Initializing tf session
+2019-05-24 11:02:08,511:INFO: Epoch 1 out of 30
+2019-05-24 11:02:10,876:INFO: acc 89.62 - f1 0.00
+2019-05-24 11:02:11,239:INFO: - new best score!
+2019-05-24 11:02:11,240:INFO: Epoch 2 out of 30
+2019-05-24 11:02:11,973:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:12,248:INFO: - new best score!
+2019-05-24 11:02:12,249:INFO: Epoch 3 out of 30
+2019-05-24 11:02:12,951:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:13,232:INFO: - new best score!
+2019-05-24 11:02:13,232:INFO: Epoch 4 out of 30
+2019-05-24 11:02:13,966:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:14,299:INFO: - new best score!
+2019-05-24 11:02:14,299:INFO: Epoch 5 out of 30
+2019-05-24 11:02:15,029:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:15,251:INFO: - new best score!
+2019-05-24 11:02:15,251:INFO: Epoch 6 out of 30
+2019-05-24 11:02:15,940:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:16,159:INFO: - new best score!
+2019-05-24 11:02:16,159:INFO: Epoch 7 out of 30
+2019-05-24 11:02:16,876:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:17,206:INFO: - new best score!
+2019-05-24 11:02:17,206:INFO: Epoch 8 out of 30
+2019-05-24 11:02:17,897:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:18,120:INFO: - new best score!
+2019-05-24 11:02:18,120:INFO: Epoch 9 out of 30
+2019-05-24 11:02:18,816:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:19,045:INFO: - new best score!
+2019-05-24 11:02:19,045:INFO: Epoch 10 out of 30
+2019-05-24 11:02:19,744:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:19,969:INFO: - new best score!
+2019-05-24 11:02:19,969:INFO: Epoch 11 out of 30
+2019-05-24 11:02:20,674:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:21,006:INFO: - new best score!
+2019-05-24 11:02:21,006:INFO: Epoch 12 out of 30
+2019-05-24 11:02:21,709:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:21,931:INFO: - new best score!
+2019-05-24 11:02:21,931:INFO: Epoch 13 out of 30
+2019-05-24 11:02:22,654:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:22,875:INFO: - new best score!
+2019-05-24 11:02:22,875:INFO: Epoch 14 out of 30
+2019-05-24 11:02:23,594:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:23,923:INFO: - new best score!
+2019-05-24 11:02:23,923:INFO: Epoch 15 out of 30
+2019-05-24 11:02:24,641:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:24,862:INFO: - new best score!
+2019-05-24 11:02:24,862:INFO: Epoch 16 out of 30
+2019-05-24 11:02:25,574:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:25,797:INFO: - new best score!
+2019-05-24 11:02:25,797:INFO: Epoch 17 out of 30
+2019-05-24 11:02:26,513:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:26,836:INFO: - new best score!
+2019-05-24 11:02:26,837:INFO: Epoch 18 out of 30
+2019-05-24 11:02:27,527:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:27,747:INFO: - new best score!
+2019-05-24 11:02:27,748:INFO: Epoch 19 out of 30
+2019-05-24 11:02:28,469:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:28,688:INFO: - new best score!
+2019-05-24 11:02:28,688:INFO: Epoch 20 out of 30
+2019-05-24 11:02:29,410:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:29,744:INFO: - new best score!
+2019-05-24 11:02:29,744:INFO: Epoch 21 out of 30
+2019-05-24 11:02:30,453:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:30,671:INFO: - new best score!
+2019-05-24 11:02:30,672:INFO: Epoch 22 out of 30
+2019-05-24 11:02:31,363:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:31,582:INFO: - new best score!
+2019-05-24 11:02:31,582:INFO: Epoch 23 out of 30
+2019-05-24 11:02:32,296:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:32,626:INFO: - new best score!
+2019-05-24 11:02:32,627:INFO: Epoch 24 out of 30
+2019-05-24 11:02:33,364:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:33,583:INFO: - new best score!
+2019-05-24 11:02:33,583:INFO: Epoch 25 out of 30
+2019-05-24 11:02:34,330:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:34,551:INFO: - new best score!
+2019-05-24 11:02:34,551:INFO: Epoch 26 out of 30
+2019-05-24 11:02:35,255:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:35,582:INFO: - new best score!
+2019-05-24 11:02:35,583:INFO: Epoch 27 out of 30
+2019-05-24 11:02:36,290:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:36,507:INFO: - new best score!
+2019-05-24 11:02:36,507:INFO: Epoch 28 out of 30
+2019-05-24 11:02:37,198:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:37,416:INFO: - new best score!
+2019-05-24 11:02:37,417:INFO: Epoch 29 out of 30
+2019-05-24 11:02:38,122:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:38,455:INFO: - new best score!
+2019-05-24 11:02:38,455:INFO: Epoch 30 out of 30
+2019-05-24 11:02:39,171:INFO: acc 90.33 - f1 0.00
+2019-05-24 11:02:39,389:INFO: - new best score!
+2019-05-24 11:02:51,546:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-05-24 11:02:51,546:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-05-24 11:02:54,340:INFO: Initializing tf session
+2019-05-24 11:02:55,074:INFO: Reloading the latest trained model...
+2019-05-24 11:02:55,074:INFO: Restoring parameters from results/test/model.weights/
+2019-05-24 11:02:55,168:INFO: Testing model over test set
+2019-05-24 11:04:06,101:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-05-24 11:04:06,102:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-05-24 11:04:08,893:INFO: Initializing tf session
+2019-05-24 11:04:10,067:INFO: Epoch 1 out of 30
+2019-05-24 11:05:23,148:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-05-24 11:05:23,148:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-05-24 11:05:26,084:INFO: Initializing tf session
+2019-05-24 11:05:27,273:INFO: Epoch 1 out of 30
+2019-05-24 11:06:40,413:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-05-24 11:06:40,414:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-05-24 11:06:43,167:INFO: Initializing tf session
+2019-05-24 11:06:44,359:INFO: Epoch 1 out of 30
+2019-05-24 11:13:20,550:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-05-24 11:13:20,550:WARNING: From /anaconda/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-05-24 11:13:23,354:INFO: Initializing tf session
+2019-05-24 11:13:24,700:INFO: Epoch 1 out of 30
+2019-05-24 11:31:45,817:INFO: acc 96.43 - f1 64.06
+2019-05-24 11:31:46,209:INFO: - new best score!
+2019-05-24 11:31:46,209:INFO: Epoch 2 out of 30

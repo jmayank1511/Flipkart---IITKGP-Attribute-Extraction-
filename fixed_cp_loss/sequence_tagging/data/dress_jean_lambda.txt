@@ -1,0 +1,2 @@
+I_SALES_PACKAGE_dress I_FABRIC_jean	4	0.5
+B_COLOR_dress B_COLOR_jean	3	0.0

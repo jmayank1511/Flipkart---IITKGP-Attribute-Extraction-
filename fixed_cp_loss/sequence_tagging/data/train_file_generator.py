@@ -7,9 +7,9 @@ for lines in f.readlines():
 	ls = lines.strip().split(" ")
 	if len(ls) == 2:
 		if ls[1] == 'O':
-			fg.write(lines)
+			fg.write(lines.strip()+ " 1\n")
 		else:
-			fg.write(ls[0]+" "+ls[1]+"_dress"+"\n")
+			fg.write(ls[0]+" "+ls[1]+"_dress"+" 1\n")
 
 	else:
 
@@ -27,9 +27,9 @@ for lines in f.readlines():
 
 			else:
 				if gs[1] == 'O':
-					fg.write(l)
+					fg.write(l.strip() + " 2\n")
 				else:
-					fg.write(gs[0]+" "+gs[1]+"_jean"+"\n")
+					fg.write(gs[0]+" "+gs[1]+"_jean"+" 2\n")
 
 	#if flag ==1:
 		#break

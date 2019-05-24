@@ -1,3 +1,4 @@
+from __future__ import division
 import numpy as np
 import os
 
@@ -41,7 +42,7 @@ class FKDataset(object):
 
     """
     def __init__(self, filename, processing_word=None, processing_tag=None,
-                 max_iter=None, task_id = None):
+                 max_iter=None):
         """
         Args:
             filename: path to the file
@@ -55,13 +56,12 @@ class FKDataset(object):
         self.processing_tag = processing_tag
         self.max_iter = max_iter
         self.length = None
-        self._id = task_id
 
 
     def __iter__(self):
         niter = 0
         with open(self.filename) as f:
-            words, tags, ids = [], []
+            words, tags, ids = [], [], []
             for line in f:
                 line = line.strip()
                 if (len(line) == 0 or line.startswith("-DOCSTART-")):
@@ -70,17 +70,17 @@ class FKDataset(object):
                         if self.max_iter is not None and niter > self.max_iter:
                             break
                         yield words, tags, ids
-                        words, tags, ids = [], []
+                        words, tags, ids = [], [], []
                 else:
                     ls = line.split(' ')
-                    word, tag = ls[0],ls[-1]
+                    word, tag, _id = ls[0],ls[1], ls[-1]
                     if self.processing_word is not None:
                         word = self.processing_word(word)
                     if self.processing_tag is not None:
                         tag = self.processing_tag(tag)
                     words += [word]
                     tags += [tag]
-                    ids += [self._id]
+                    ids += [_id]
             #print(str(words))
             #print(str(tags))
 
@@ -109,7 +109,7 @@ def get_vocabs(datasets):
     vocab_words = set()
     vocab_tags = set()
     for dataset in datasets:
-        for words, tags in dataset:
+        for words, tags, _ in dataset:
             vocab_words.update(words)
             vocab_tags.update(tags)
     print("- done. {} tokens".format(len(vocab_words)))
@@ -127,7 +127,7 @@ def get_char_vocab(dataset):
 
     """
     vocab_char = set()
-    for words, _ in dataset:
+    for words, _, _ in dataset:
         for word in words:
             vocab_char.update(word)
 
@@ -360,7 +360,6 @@ def minibatches(data, minibatch_size):
             x_batch, y_batch, ids = [], [], []
 
         if type(x[0]) == tuple:
-            word += [x]
             x = zip(*x)
             #print("Inside if")
         x_batch += [x]

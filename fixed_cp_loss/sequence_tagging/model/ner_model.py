@@ -1,3 +1,4 @@
+from __future__ import division
 import numpy as np
 import os
 import tensorflow as tf
@@ -82,7 +83,7 @@ class NERModel(BaseModel):
             # generate mask for task 1. 
             mask = []
             for _id in ids:
-                if _id == 1:
+                if _id[0] == "1":
                     mask.append(True)
                 else:
                     mask.append(False)
@@ -397,15 +398,12 @@ class NERModel(BaseModel):
         out = ''
         
         correct_preds, total_correct, total_preds = 0., 0., 0.
-        for words, labels, sumit in minibatches(test, self.config.batch_size):
+        for words, labels, ids_ in minibatches(test, self.config.batch_size):
             labels_pred, sequence_lengths = self.predict_batch(words)
             
-            for desc, lab, lab_pred, length in zip(sumit, labels, labels_pred,
+            for lab, lab_pred, length in zip(labels, labels_pred,
                                              sequence_lengths):
                 
-                for i, j, k in zip(desc, lab, lab_pred):
-                    out = out + str(self.idx_to_word[i[1]]) + " "+str(self.idx_to_tag[j]) + " " + str(self.idx_to_tag[k]) + "\n"
-                out = out + "\n"
                 lab      = lab[:length]
                 lab_pred = lab_pred[:length]
                 accs    += [a==b for (a, b) in zip(lab, lab_pred)]
@@ -422,9 +420,6 @@ class NERModel(BaseModel):
         r   = correct_preds / total_correct if correct_preds > 0 else 0
         f1  = 2 * p * r / (p + r) if correct_preds > 0 else 0
         acc = np.mean(accs)
-        with open("./test_out.txt", 'w') as f:
-            f.write(out)
-        print ("Precision:" + " " + str(p) + " " + "Recall:" + " " + str(r))
         return {"acc": 100*acc, "f1": 100*f1}
 
 

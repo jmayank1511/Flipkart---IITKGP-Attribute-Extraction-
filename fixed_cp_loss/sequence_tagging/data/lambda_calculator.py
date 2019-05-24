@@ -1,3 +1,4 @@
+from __future__ import division
 import os
 import numpy as np
 
@@ -19,7 +20,7 @@ def loadGloveModel(gloveFile):
     if os.path.exists("{}.npy".format(gloveFile[:-4])):
         return np.load("{}.npy".format(gloveFile[:-4]))[()]
     
-    with open(gloveFile, encoding="utf8" ) as f:
+    with open(gloveFile) as f:
         model = {}
         for line in f:
             splitLine = line.split()
@@ -143,11 +144,11 @@ def calculate_lambda(similarity_dict, outfile):
             fw.write("{} {}\t{}\t{}\n".format(key[0], key[1], total_count, lamda))
 
 if __name__ == "__main__":
-    vecs = loadGloveModel("glove.6B.300d.txt")
-    v1 = "mangal"
-    v2 = "necklace"
-    v1_list = get_tag_words("mangal.txt")
-    v2_list = get_tag_words("necklace.txt")
+    vecs = loadGloveModel("./glove.6B/glove.6B.300d.txt")
+    v1 = "dress"
+    v2 = "jean"
+    v1_list = get_tag_words("dress_small_train.txt")
+    v2_list = get_tag_words("jean_small_train.txt")
     sim_results = calculate_similarity(v1, v1_list, v2, v2_list, vecs)
-    calculate_lambda(sim_results, "mangal_necklace_lambda.txt")
+    calculate_lambda(sim_results, "dress_jean_lambda.txt")
  
