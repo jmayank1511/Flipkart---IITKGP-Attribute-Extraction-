@@ -156,3 +156,448 @@ batch_dim is deprecated, use batch_axis instead
 2019-05-24 11:31:45,817:INFO: acc 96.43 - f1 64.06
 2019-05-24 11:31:46,209:INFO: - new best score!
 2019-05-24 11:31:46,209:INFO: Epoch 2 out of 30
+2019-05-25 11:11:02,850:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:11:03,834:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:153: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:11:03,835:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:158: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:11:03,836:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:11:03,842:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:11:04,081:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:169: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:11:06,373:INFO: Initializing tf session
+2019-05-25 11:11:07,354:INFO: Epoch 1 out of 30
+2019-05-25 11:15:31,357:INFO: acc 93.99 - f1 14.92
+2019-05-25 11:15:31,797:INFO: - new best score!
+2019-05-25 11:15:31,797:INFO: Epoch 2 out of 30
+2019-05-25 11:20:32,768:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:20:33,592:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:154: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:20:33,595:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:159: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:20:33,596:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:20:33,603:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:20:33,827:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:170: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:21:10,460:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:21:11,302:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:154: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:21:11,303:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:159: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:21:11,303:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:21:11,309:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:21:11,518:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:170: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:21:13,369:INFO: Initializing tf session
+2019-05-25 11:21:14,268:INFO: Epoch 1 out of 30
+2019-05-25 11:23:26,849:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:23:27,689:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:23:27,690:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:23:27,690:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:23:27,697:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:23:27,912:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:23:28,366:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:232: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+2019-05-25 11:25:31,025:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:25:31,991:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:25:31,992:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:25:31,992:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:25:31,997:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:25:32,215:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:25:32,684:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:232: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+2019-05-25 11:25:34,156:INFO: Initializing tf session
+2019-05-25 11:25:35,056:INFO: Epoch 1 out of 30
+2019-05-25 11:45:30,782:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:45:31,678:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:45:31,680:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:45:31,681:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:45:31,687:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:45:31,912:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:45:32,357:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:233: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+2019-05-25 11:45:33,763:INFO: Initializing tf session
+2019-05-25 11:45:34,667:INFO: Epoch 1 out of 30
+2019-05-25 11:47:11,741:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:47:12,735:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:47:12,736:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:47:12,736:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:47:12,741:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:47:13,014:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:48:42,180:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:48:43,042:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:48:43,042:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:48:43,043:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:48:43,048:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:48:43,253:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:49:02,001:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:49:02,852:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:49:02,853:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:49:02,853:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:49:02,858:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:49:03,065:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:51:06,123:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:51:06,952:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:51:06,953:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:51:06,953:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:51:06,958:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:51:07,172:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:51:07,636:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:232: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+2019-05-25 11:51:19,260:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:51:20,087:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:51:20,088:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:51:20,088:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:51:20,093:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:51:20,309:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:51:20,769:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:232: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+2019-05-25 11:51:22,206:INFO: Initializing tf session
+2019-05-25 11:51:23,148:INFO: Epoch 1 out of 30
+2019-05-25 11:55:25,550:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:55:26,417:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:155: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:55:26,417:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:160: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:55:26,418:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:55:26,423:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:55:26,646:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:171: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:55:27,106:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:237: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+2019-05-25 11:55:28,562:INFO: Initializing tf session
+2019-05-25 11:55:29,631:INFO: Epoch 1 out of 30
+2019-05-25 11:55:55,162:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 11:55:56,017:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:153: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 11:55:56,018:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:158: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 11:55:56,018:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 11:55:56,023:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 11:55:56,248:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:169: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 11:55:58,220:INFO: Initializing tf session
+2019-05-25 11:55:59,155:INFO: Epoch 1 out of 30
+2019-05-25 11:59:58,849:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 12:00:00,123:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:153: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 12:00:00,124:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:158: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 12:00:00,125:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 12:00:00,132:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 12:00:00,354:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:169: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 12:00:00,863:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:284: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+2019-05-25 12:00:51,250:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 12:00:52,069:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:153: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 12:00:52,070:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:158: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 12:00:52,071:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 12:00:52,076:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 12:00:52,285:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:169: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 12:00:54,229:INFO: Initializing tf session
+2019-05-25 12:00:55,169:INFO: Epoch 1 out of 30
+2019-05-25 12:01:42,494:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-05-25 12:01:43,339:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:153: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-05-25 12:01:43,340:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:158: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-05-25 12:01:43,340:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-05-25 12:01:43,345:WARNING: From /Users/krishna.aruru/tf3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-05-25 12:01:43,561:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:169: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-05-25 12:01:44,073:WARNING: From /Users/krishna.aruru/Flipkart---IITKGP-Attribute-Extraction-/fixed_cp_loss/sequence_tagging/model/ner_model.py:284: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+2019-05-25 12:01:45,487:INFO: Initializing tf session
+2019-05-25 12:01:46,384:INFO: Epoch 1 out of 30

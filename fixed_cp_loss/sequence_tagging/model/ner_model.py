@@ -1,4 +1,4 @@
-from __future__ import division
+from __future__ import division, print_function
 import numpy as np
 import os
 import tensorflow as tf
@@ -229,6 +229,8 @@ class NERModel(BaseModel):
             task2 = tf.boolean_mask(log_likelihood, tf.logical_not(self.mask))
             task1_ll_average = tf.reduce_mean(-task1)
             task2_ll_average = tf.reduce_mean(-task2)
+            task1_ll_average = tf.where(tf.is_nan(task1_ll_average), 0.0, task1_ll_average)
+            task2_ll_average = tf.where(tf.is_nan(task2_ll_average), 0.0, task2_ll_average)
             self.loss = tf.add(task1_ll_average, task2_ll_average)
             self.trans_params = trans_params 
 
