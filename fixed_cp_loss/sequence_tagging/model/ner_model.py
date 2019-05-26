@@ -225,12 +225,23 @@ class NERModel(BaseModel):
         """Defines the loss"""
         if self.config.use_crf:
             log_likelihood, trans_params = tf.contrib.crf.crf_log_likelihood(self.logits, self.labels, self.sequence_lengths)
+            # self.mask is a boolean array. It has value True for all indices of the batch which correspond to task1.
+            # so applying self.mask to log_likelihood will give us log_likelihoods of descriptions belonging to task 1 and the
+            # remaining indices correspond to task 2
             task1 = tf.boolean_mask(log_likelihood, self.mask)
             task2 = tf.boolean_mask(log_likelihood, tf.logical_not(self.mask))
+
             task1_ll_average = tf.reduce_mean(-task1)
             task2_ll_average = tf.reduce_mean(-task2)
+            
+            # if all the values of self.mask are same (i.e every description in the batch belongs to one task), then one of the
+            # task1 and task2 tensors will be empty. tf.reduce_mean will give nan for empty tensors. So we check if the loss is
+            # NaN and assign it to zero value if it is.
             task1_ll_average = tf.where(tf.is_nan(task1_ll_average), 0.0, task1_ll_average)
             task2_ll_average = tf.where(tf.is_nan(task2_ll_average), 0.0, task2_ll_average)
+            # we can give specific weightage to loss of each task by multiplying task1_ll_average or 
+            # task2_ll_average with some values here, before adding them.
+
             self.loss = tf.add(task1_ll_average, task2_ll_average)
             self.trans_params = trans_params 
 
