@@ -102,7 +102,7 @@ class BaseModel(object):
                 self.sess.graph)
 
 
-    def train(self, train, dev):
+    def train(self, train, dev,data_for_coupling):
         """Performs training with early stopping and lr exponential decay
 
         Args:
@@ -118,7 +118,7 @@ class BaseModel(object):
             self.logger.info("Epoch {:} out of {:}".format(epoch + 1,
                         self.config.nepochs))
 
-            score = self.run_epoch(train, dev, epoch)
+            score = self.run_epoch(train, dev, epoch,data_for_coupling)
             self.config.lr *= self.config.lr_decay # decay learning rate
 
             # early stopping and saving best parameters
@@ -138,7 +138,7 @@ class BaseModel(object):
 
         """
         self.logger.info("Testing model over test set")
-        metrics = self.run_evaluate(test,k)
+        metrics = self.run_evaluate(test)
         msg = " - ".join(["{} {:04.2f}".format(k, v)
                 for k, v in metrics.items()])
         self.logger.info(msg)

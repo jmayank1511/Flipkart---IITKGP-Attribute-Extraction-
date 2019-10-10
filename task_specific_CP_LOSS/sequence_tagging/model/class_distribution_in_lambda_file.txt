@@ -1,0 +1,129 @@
+O 	                                        97.54 %
+B_IDEAL_FOR_dress 	                        0.06 %
+B_BRAND_dress 	                            0.32 %
+B_OCCASION_dress 	                        0.10 %
+I_COLOR_dress 	                            0.01 %
+B_COLOR_dress 	                            0.29 %
+B_SALES_PACKAGE_dress 	                    0.17 %
+B_FABRIC_dress 	                            0.12 %
+B_SIZE_dress 	                            0.01 %
+I_SALES_PACKAGE_dress 	                    0.00 %
+I_BRAND_dress 	                            0.01 %
+I_PATTERN_dress 	                        0.00 %
+B_NECK_dress 	                            0.01 %
+I_COLOR_CODE_dress 	                        0.01 %
+B_PATTERN_dress 	                        0.01 %
+B_SLEEVE_dress 	                            0.01 %
+B_COLOR_CODE_dress 	                        0.03 %
+I_SIZE_dress 	                            0.01 %
+I_IDEAL_FOR_dress 	                        0.09 %
+B_TYPE_dress 	                            0.00 %
+I_FABRIC_dress 	                            0.01 %
+B_LENGTH_dress 	                            0.00 %
+I_NECK_dress 	                            0.01 %
+I_LENGTH_dress 	                            0.00 %
+I_TYPE_dress 	                            0.00 %
+B_DESIGN_CODE_dress 	                    0.00 %
+I_SLEEVE_dress 	                            0.00 %
+B_NUMBER_OF_CONTENTS_IN_SALES_PACKAGE_dress 0.00 %
+B_LINING_MATERIAL_dress 	                0.00 %
+I_FABRIC_CARE_dress 	                    0.00 %
+I_STYLE_CODE_dress 	                        0.00 %
+B_STYLE_CODE_dress 	                        0.00 %
+B_COLOR_jean 	                            0.32 %
+I_COLOR_CODE_jean 	                        0.00 %
+I_COLOR_jean 	                            0.03 %
+B_SALES_PACKAGE_jean 	                    0.08 %
+B_FABRIC_jean 	                            0.10 %
+I_FABRIC_jean 	                            0.03 %
+B_PATTERN_jean 	                            0.01 %
+B_BRAND_jean 	                            0.24 %
+B_FIT_jean 	                                0.05 %
+B_IDEAL_FOR_jean 	                        0.00 %
+B_REFINER_FIT_jean 	                        0.03 %
+I_DESIGN_CODE_jean 	                        0.00 %
+I_PATTERN_jean 	                            0.00 %
+I_IDEAL_FOR_jean                            0.03 %
+B_CLOSURE_jean 	                            0.02 %
+I_FIT_jean 	                                0.00 %
+B_POCKET_TYPE_jean 	                        0.00 %
+B_RISE_jean 	                            0.00 %
+I_BRAND_jean 	                            0.00 %
+B_COLOR_CODE_jean 	                        0.01 %
+B_NUMBER_OF_CONTENTS_IN_SALES_PACKAGE_jean 	0.00 %
+B_FABRIC_CARE_jean 	                        0.00 %
+I_SALES_PACKAGE_jean 	                    0.00 %
+I_FABRIC_CARE_jean 	                        0.00 %
+I_RISE_jean 	                            0.00 %
+I_OTHER_DIMENSIONS_jean 	                0.00 %
+I_POCKET_TYPE_jean 	                        0.00 %
+B_FLY_jean 	                                0.00 %
+B_DESIGN_CODE_jean 	                        0.00 %
+B_INSIDE_LEG_IN_INCH_jean 	                0.00 %
+
+
+
+O 	 3821476
+B_IDEAL_FOR_dress 	 2259
+B_BRAND_dress 	 12923
+B_OCCASION_dress 	 4213
+I_COLOR_dress 	 628
+B_COLOR_dress 	 11713
+B_SALES_PACKAGE_dress 	 6902
+B_FABRIC_dress 	 4903
+B_SIZE_dress 	 476
+I_SALES_PACKAGE_dress 	 316
+I_BRAND_dress 	 578
+I_PATTERN_dress 	 74
+B_NECK_dress 	 629
+I_COLOR_CODE_dress 	 439
+B_PATTERN_dress 	 558
+B_SLEEVE_dress 	 500
+B_COLOR_CODE_dress 	 1531
+I_SIZE_dress 	 556
+I_IDEAL_FOR_dress 	 3827
+B_TYPE_dress 	 308
+I_FABRIC_dress 	 423
+B_LENGTH_dress 	 161
+I_NECK_dress 	 587
+I_LENGTH_dress 	 148
+I_TYPE_dress 	 126
+B_DESIGN_CODE_dress 	 18
+I_SLEEVE_dress 	 36
+B_NUMBER_OF_CONTENTS_IN_SALES_PACKAGE_dress 	 7
+B_LINING_MATERIAL_dress 	 20
+I_FABRIC_CARE_dress 	 2
+I_STYLE_CODE_dress 	 4
+B_STYLE_CODE_dress 	 4
+B_COLOR_jean 	 12675
+I_COLOR_CODE_jean 	 361
+I_COLOR_jean 	 1226
+B_SALES_PACKAGE_jean 	 3384
+B_FABRIC_jean 	 4169
+I_FABRIC_jean 	 1216
+B_PATTERN_jean 	 400
+B_BRAND_jean 	 9681
+B_FIT_jean 	 2347
+B_IDEAL_FOR_jean 	 266
+B_REFINER_FIT_jean 	 1242
+I_DESIGN_CODE_jean 	 11
+I_PATTERN_jean 	 55
+I_IDEAL_FOR_jean 	 1503
+B_CLOSURE_jean 	 843
+I_FIT_jean 	 237
+B_POCKET_TYPE_jean 	 18
+B_RISE_jean 	 65
+I_BRAND_jean 	 274
+B_COLOR_CODE_jean 	 472
+B_NUMBER_OF_CONTENTS_IN_SALES_PACKAGE_jean 	 266
+B_FABRIC_CARE_jean 	 21
+I_SALES_PACKAGE_jean 	 348
+I_FABRIC_CARE_jean 	 12
+I_RISE_jean 	 19
+I_OTHER_DIMENSIONS_jean 	 140
+I_POCKET_TYPE_jean 	 10
+B_FLY_jean 	 21
+B_DESIGN_CODE_jean 	 23
+B_INSIDE_LEG_IN_INCH_jean 	 4
+I_INSIDE_LEG_IN_INCH_jean 	 3
+

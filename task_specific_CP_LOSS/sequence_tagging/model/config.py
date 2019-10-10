@@ -7,7 +7,7 @@ from .data_utils import get_trimmed_glove_vectors, load_vocab, \
 
 
 class Config():
-    def __init__(self, load=True):
+    def __init__(self, load=True, createLogger = True):
         """Initialize hyperparameters and load vocabs
 
         Args:
@@ -20,7 +20,8 @@ class Config():
             os.makedirs(self.dir_output)
 
         # create instance of logger
-        self.logger = get_logger(self.path_log)
+        if createLogger:
+                self.logger = get_logger(self.path_log)
 
         # load if requested (default)
         if load:
@@ -39,6 +40,16 @@ class Config():
         self.vocab_words = load_vocab(self.filename_words)
         self.vocab_tags  = load_vocab(self.filename_tags)
         self.vocab_chars = load_vocab(self.filename_chars)
+        '''
+        
+        import pickle
+        with open("data/vocab_words.pkl",'w')as o:
+                pickle.dump(self.vocab_words,o,pickle.HIGHEST_PROTOCOL)
+        with open("data/vocab_tags.pkl",'w')as o:
+                pickle.dump(self.vocab_tags,o,pickle.HIGHEST_PROTOCOL)
+        with open("data/vocab_chars.pkl",'w')as o:
+                pickle.dump(self.vocab_chars,o,pickle.HIGHEST_PROTOCOL)
+        '''
 
         self.nwords     = len(self.vocab_words)
         self.nchars     = len(self.vocab_chars)
@@ -63,7 +74,7 @@ class Config():
     # embeddings
     dim_word = 300
     dim_char = 100
-
+    
     # glove files
     filename_glove = "data/glove.6B/glove.6B.{}d.txt".format(dim_word)
     # trimmed embeddings (created from glove_filename with build_data.py)
@@ -79,6 +90,10 @@ class Config():
     filename_test1 = "data/dress_test.txt"
     filename_test2 = "data/jean_test.txt"
     filename_train = "data/dress_jean_train.txt" # test
+    filename_lambda_dress = "data/dress_lambda.pkl"
+    filename_lambda_jean = "data/jean_lambda.pkl"
+
+
 
     max_iter = None # if not None, max number of examples in Dataset
 
@@ -89,9 +104,15 @@ class Config():
 
     # training
     train_embeddings = False
-    nepochs          = 30
+    nepochs          = 60
     dropout          = 0.5
     batch_size       = 20
+    batch_size_coup  = 20
+    num_of_examples_for_coupling = 35986
+    label_embedding_size = 15
+    label_vocab_size = 27
+    max_kmer_list_size = 42
+    kValOfKmer       = 2
     lr_method        = "adam"
     lr               = 0.001
     lr_decay         = 0.9
@@ -105,3 +126,5 @@ class Config():
     # NOTE: if both chars and crf, only 1.6x slower on GPU
     use_crf = True # if crf, training is 1.7x slower on CPU
     use_chars = True # if char embedding, training is 3.5x slower on CPU
+    use_kmer = True
+    use_coupling = True
